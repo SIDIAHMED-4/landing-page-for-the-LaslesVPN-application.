@@ -1,0 +1,11 @@
+@mixin ipad-version {
+    @media (max-width:1145px) {
+        @content;
+    }
+}
+
+@mixin mobile-version {
+    @media (max-width:700px) {
+        @content;
+    }
+}

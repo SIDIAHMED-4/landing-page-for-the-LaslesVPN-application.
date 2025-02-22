@@ -1,0 +1,65 @@
+@import "./mixins";
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    background: #ffffff;
+    max-width: 100%;
+
+    @include ipad-version {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__Premium-Plan {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        border: 2px solid rgb(255, 77, 77);
+        border-radius: 2rem;
+        padding: 2rem;
+        background: #F8F8F8;
+
+        &--h2 {
+            margin-top: .8rem;
+        }
+
+        &--pselect {
+            margin-top: 2.5rem;
+        }
+
+        &--select {
+            padding: 1rem 3rem;
+            background-color: red;
+            text-align: center;
+            border-radius: 3.125rem;
+            color: white;
+            margin-top: .8rem;
+        }
+
+        &--12 {
+            font-size: var(--font-size-h2);
+        }
+
+        &--mo {
+            font-size: var(--font-size-p);
+        }
+    }
+
+}
+
+.pselect {
+    margin-top: 5rem;
+}
+
+.Premium-Plan {
+    border: 2px solid rgb(240, 234, 234);
+}
+
+.select {
+    background-color: white;
+    color: rgb(255, 0, 0);
+    border: .225rem solid rgb(255, 3, 3);
+}

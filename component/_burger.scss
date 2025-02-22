@@ -1,0 +1,64 @@
+@import "./mixins";
+
+.burger_menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: .3rem;
+    margin-right: 8rem;
+
+
+    @include mobile-version {
+        margin-right: 1rem;
+    }
+
+    @media (min-width:700px) {
+        display: none;
+    }
+}
+
+.burger_menu-checkbox {
+    display: none;
+
+}
+
+
+
+.header:has(.burger_menu-checkbox:checked) .navigation {
+    @include mobile-version {
+        display: initial;
+        position: absolute;
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        gap: .4rem;
+        // padding-bottom: 1rem;
+        margin-top: 6rem;
+        margin-left: 1rem;
+        background: #F8F8F8;
+
+
+
+
+    }
+}
+
+.burger_menu-bar {
+    height: .3rem;
+    width: 2.375rem;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.header:has(.burger_menu-checkbox:checked) .burger_menu-bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+}
+
+.header:has(.burger_menu-checkbox:checked) .burger_menu-bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header:has(.burger_menu-checkbox:checked) .burger_menu-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+}

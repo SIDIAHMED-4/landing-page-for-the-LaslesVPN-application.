@@ -1,0 +1,122 @@
+@import "./mixins";
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 1rem 3rem;
+    background: #ffffff;
+    max-width: 100%;
+
+    @include ipad-version {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin: 0;
+        max-width: 20rem;
+        margin-top: 4rem;
+    }
+
+
+}
+
+.content1 {
+    flex: 1;
+    gap: 1.5rem;
+    align-content: center;
+    max-width: 100%;
+
+    @include ipad-version {
+        max-width: 100%;
+    }
+
+    &__h1 {
+        color: #0B132A;
+        font-size: 4rem;
+
+        @include ipad-version {
+            font-size: 1rem;
+        }
+
+    }
+
+    &__h2 {
+        font-size: var(--font-size-h2);
+        margin-bottom: 2rem;
+
+        @include ipad-version {
+            font-size: .9rem;
+        }
+    }
+
+    &__p {
+        font-size: var(--font-size-p);
+        color: #0B132A;
+
+        @include ipad-version {
+            font-size: .6rem;
+        }
+    }
+
+    &__button {
+        margin-top: 1.5rem;
+        background-color: red;
+        color: white;
+        padding: .9rem 2rem;
+
+        border-radius: 3.125rem;
+        box-shadow: 0rem .8rem 2rem #b36161cb,
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 2rem;
+        font-size: var(--font-size-p);
+    }
+}
+
+.content2 {
+    display: flex;
+    flex: 1;
+
+    @include ipad-version {
+        order: -1;
+
+    }
+
+    &__pic {
+        max-width: 100%;
+
+        @include ipad-version {
+            max-width: 100%;
+        }
+    }
+
+}
+
+.section2 {
+    margin-left: 6rem;
+    gap: 2rem;
+    background: inherit;
+
+    @include ipad-version {
+        margin-left: 0;
+    }
+
+
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: inherit;
+
+}
+
+
+// Ende section
