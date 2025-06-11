@@ -2,7 +2,7 @@
 
 A responsive landing page for the **LaslesVPN** application, built using HTML and CSS. This project is part of my front-end learning journey and focuses on creating a clean, modern, and user-friendly design.
 
-🔗 [Live Demo](https://sidiahmed-4.github.io/landing-page-for-the-LaslesVPN-application/)
+🔗 [Live Demo](https://sidiahmed-4.github.io/landing-page-for-the-LaslesVPN-application./)
 
 ## 📌 Features
 
