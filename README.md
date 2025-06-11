@@ -19,7 +19,7 @@ A responsive landing page for the **LaslesVPN** application, built using HTML an
 - CSS3
 - Flexbox & Grid
 - Google Fonts
-- Font Awesome (if used)
+- Font Awesome
 
 ## 📁 Project Structure
 
